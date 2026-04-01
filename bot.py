@@ -7,7 +7,9 @@ from aiogram.filters import Command
 from openpyxl import Workbook, load_workbook
 
 # ===== НАСТРОЙКИ =====
-TOKEN = "8679773864:AAHaK5HeIKlCqO4pDBsdi6O5O_Qq9F1PipE"
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 778497367  # <-- вставь свой Telegram ID
 
 services = ["Стрижка", "Маникюр", "Педикюр", "Окрашивание"]
